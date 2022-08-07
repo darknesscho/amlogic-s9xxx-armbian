@@ -20,7 +20,7 @@ on:
       armbian_soc:
         description: "Select Amlogic SoC."
         required: false
-        default: "all"
+        default: "s905"
         type: choice
         options:
           - all
@@ -79,7 +79,7 @@ on:
   #- cron: "0 17 * * 0"
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Shanghai
 
 jobs:
   build:
